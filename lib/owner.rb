@@ -3,8 +3,9 @@ class Owner
  attr_reader :species
   @@all = []
 
-    def initialize(name)
-        @name = name
+    def initialize(species)
+        @species = species
+        @@all <<self
       end
 
     def all
@@ -14,10 +15,10 @@ class Owner
       self.clear
     end
     def self.count
-      @@all.size 
+      @@all.size
     end
    def species
-     @species = species
+     
    end
     def say_species
       puts "I am a #{species}."

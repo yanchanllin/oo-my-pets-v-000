@@ -8,8 +8,8 @@ class Owner
         @@all <<self
       end
 
-    def all
-      self.all = @@all
+    def self.all
+       @@all
     end
     def self.reset_all
       self.clear
@@ -17,17 +17,15 @@ class Owner
     def self.count
       @@all.size
     end
-   def species
-     
-   end
+   
     def say_species
-      puts "I am a #{species}."
+      "I am a #{species}."
     end
     def name
       self.name
     end
     def pets
-      self.pets = {":#{species} => []",":#{species} => []",":#{species} => []"}
+      self.pets = {:fishes => [], :dogs => [], :cats => []}
     end
     def buy_fish(name)
       fish = Fish.new

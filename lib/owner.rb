@@ -1,9 +1,11 @@
 class Owner
-  attr_accessor :mood
-  attr_reader :name
+  attr_accessor :name
 
-    def initialize(name,mood = "nervous")
+  @@all= []
+    def initialize(name)
         @name = name
-        @mood = mood
-      end
+      end 
+
+  
+      
 end

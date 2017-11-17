@@ -6,8 +6,8 @@ class Owner
         @name = name
       end
 
-    def all 
+    def all
       self.all = @@all
-    end 
+    end
 
 end

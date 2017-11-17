@@ -17,7 +17,7 @@ class Owner
     def self.count
       @@all.size
     end
-   
+
     def say_species
       "I am a #{species}."
     end
@@ -30,6 +30,6 @@ class Owner
     def buy_fish(name)
       fish = Fish.new
       pets[:fishes] <<fish
-
     end
+    
 end

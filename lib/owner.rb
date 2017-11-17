@@ -17,11 +17,11 @@ class Owner
     def self.count
       @@all.size
     end
-    
+
     def say_species
       "I am a #{species}."
     end
-    
+
     def pets
       self.pets = {:fishes => [], :dogs => [], :cats => []}
     end

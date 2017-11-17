@@ -41,14 +41,17 @@ class Owner
     end
     def walk_dogs
       pets[:dogs].map {|dog| dog.mood = "happy"}
-    end 
+    end
     def play_with_cats
       pets[:cats].map {|cat| cat.mood = "happy"}
-    end 
-    def feed_fish 
+    end
+    def feed_fish
       pets[:fishes].map {|fish| fish.mood = "happy"}
     end
     def sell_pets
-      
+    self.pets.map {|x| x.mood = "nervous"}
     end
+    def list_pets
+      "I have #{fish.count}fish, #{dog.count}dog(s), and #{cat.count}cat(s)."
+    end 
 end

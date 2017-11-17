@@ -48,6 +48,7 @@ class Owner
       pets.each do |type, pet|
         pets.map {|pet| pet.mood = "nervous"}
       end
+      pets.clear
     end
     def list_pets
       "I have #{fish.count}fish, #{dog.count}dog(s), and #{cat.count}cat(s)."
